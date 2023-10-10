@@ -1,16 +1,15 @@
 import 'package:doctor_app/components/app_grid_menu.dart';
+import 'package:doctor_app/components/doctors_list.dart';
 import 'package:flutter/material.dart';
 import 'package:doctor_app/components/home_screen_navbar.dart';
 import 'package:doctor_app/screens/constants.dart';
-import 'package:doctor_app/screens/doctor_app_theme.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final headlineMediumStyle = Theme.of(context).textTheme.headlineMedium;
-
     return Scaffold(
       body: SafeArea(
         child: SingleChildScrollView(
@@ -26,13 +25,13 @@ class HomeScreen extends StatelessWidget {
                 RichText(
                   text: TextSpan(
                     style: Theme.of(context).textTheme.headlineMedium,
-                    children: const <TextSpan>[
+                    children: <TextSpan>[
                       TextSpan(
                           text: 'Find',
-                          style: TextStyle(color: kBlackColor900)),
+                          style: GoogleFonts.lato(color: kBlackColor900)),
                       TextSpan(
                         text: ' your doctor',
-                        style: TextStyle(
+                        style: GoogleFonts.lato(
                           color: kGreyColor900,
                         ),
                       ),
@@ -74,7 +73,36 @@ class HomeScreen extends StatelessWidget {
                           contentPadding: EdgeInsets.only(bottom: 5),
                           border: InputBorder.none)),
                 ),
+                const SizedBox(
+                  height: 24,
+                ),
                 const DoctorsGrid(),
+                const SizedBox(
+                  height: 24,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'Top Doctors',
+                      style: GoogleFonts.lato(
+                          fontSize: 21,
+                          color: kBlackColor900,
+                          fontWeight: FontWeight.w600),
+                    ),
+                    Text(
+                      'View All',
+                      style: GoogleFonts.lato(
+                          fontSize: 14,
+                          color: kBlueColor,
+                          fontWeight: FontWeight.w700),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 24,
+                ),
+                const TopDoctorsList(),
               ],
             ),
           ),

@@ -13,8 +13,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_svg_provider: ^1.0.6
   flutter_rating_bar: ^4.0.1
-
-
+  flutter_svg: ^2.0.7
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -24,7 +23,21 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/homescreen_images/images.png
+    - assets/images/img-men-01.png
+    - assets/images/img-men-02.png
+    - assets/images/img-men-03.png
+    - assets/images/img-women-01.png
+    - assets/images/img-women-02.png
+    - assets/images/img-women-03.png
+    - assets/svg/img-surgeon.svg
+    - assets/svg/img-skin.svg
+    - assets/svg/img-physician.svg 
+    - assets/svg/img-medicine.svg
+    - assets/svg/img-hospital.svg
+    - assets/svg/img-heart.svg
+    - assets/svg/img-dental.svg
+    - assets/svg/img-consultation.svg
+    - assets/images/images.png
     - assets/svg/Icons-Menu-Burger.svg
     - assets/gilang.png
     - assets/back.png
@@ -32,3 +45,4 @@ flutter:
     - assets/comment.png
     - assets/shabil.png
     - assets/suprihatini.png
+    - assets/svg/img-consultation.svg
