@@ -10,6 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.6
+  flutter_svg_provider: ^1.0.6
+  flutter_rating_bar: ^4.0.1
+
 
 dev_dependencies:
   flutter_test:
@@ -20,6 +24,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/
     - assets/gilang.png
     - assets/back.png
     - assets/bookmark.png
