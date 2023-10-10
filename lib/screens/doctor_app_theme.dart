@@ -48,7 +48,10 @@ class DoctorAppTheme {
           fontWeight: FontWeight.w400,
         ),
       ),
-      colorScheme: ColorScheme(background: kWhiteColor),
+      colorScheme: const ColorScheme.light(
+        // You can set the primary color if needed
+        background: kWhiteColor, // Set the background color to white
+      ),
     );
   }
 }

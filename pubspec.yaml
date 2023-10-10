@@ -24,7 +24,8 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/homescreen_images/images.png
+    - assets/svg/Icons-Menu-Burger.svg
     - assets/gilang.png
     - assets/back.png
     - assets/bookmark.png
