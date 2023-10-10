@@ -29,8 +29,7 @@ class HomeScreenNavBar extends StatelessWidget {
           height: 40,
           child: CircleAvatar(
               backgroundColor: kBlueColor,
-              backgroundImage:
-                  AssetImage('assets/homescreen_images/images.png')),
+              backgroundImage: AssetImage('assets/images/images.png')),
         ),
       ],
     );

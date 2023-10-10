@@ -28,7 +28,10 @@ class gilang extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    // insert on tap(mu balik sa homescreen)
+                    onTap: () {
+                      Navigator.of(context)
+                          .pop(); // Navigate back to the previous screen (Home screen)
+                    },
                     child: Container(
                       height: 24,
                       width: 24,

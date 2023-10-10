@@ -13,21 +13,9 @@ class TopDoctorsList extends StatelessWidget {
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
-            Navigator.of(context).pushNamed(
-              '/doctor_details',
-              arguments: Doctor(
-                doctorName: topDoctors[index].doctorName,
-                doctorDescription: topDoctors[index].doctorDescription,
-                doctorHospital: topDoctors[index].doctorHospital,
-                doctorIsOpen: topDoctors[index].doctorIsOpen,
-                doctorNumberOfPatient: topDoctors[index].doctorNumberOfPatient,
-                doctorPicture: topDoctors[index].doctorPicture,
-                doctorRating: topDoctors[index].doctorRating,
-                doctorSpecialty: topDoctors[index].doctorSpecialty,
-                doctorYearOfExperience:
-                    topDoctors[index].doctorYearOfExperience,
-              ),
-            );
+            final doctorName = topDoctors[index].doctorName;
+            final route = getDoctorRoute(doctorName);
+            Navigator.of(context).pushNamed(route);
           },
           child: TopDoctorsCard(
             doctor: topDoctors[index],
@@ -35,5 +23,20 @@ class TopDoctorsList extends StatelessWidget {
         );
       },
     );
+  }
+
+  String getDoctorRoute(String doctorName) {
+    switch (doctorName) {
+      case 'dr. Gilang Segara Bening':
+        return '/gilang';
+      case 'dr. Shabil Chan':
+        return '/shabil';
+      case 'dr. Mustakim':
+        return '/mustakim';
+      case 'dr. Suprihatini':
+        return '/suprihatini';
+      default:
+        return '/unknown'; // Handle unknown doctors or navigate to an error screen.
+    }
   }
 }

@@ -29,7 +29,9 @@ class suprihatini extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    // insert on tap(mu balik sa homescreen)
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
                     child: Container(
                       height: 24,
                       width: 24,

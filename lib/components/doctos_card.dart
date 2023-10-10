@@ -54,7 +54,7 @@ class TopDoctorsCard extends StatelessWidget {
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
                         style: GoogleFonts.lato(
-                          fontSize: 15,
+                          fontSize: 16,
                           color: kBlackColor900,
                         ),
                       ),
@@ -64,9 +64,9 @@ class TopDoctorsCard extends StatelessWidget {
                     '${doctor!.doctorSpecialty} • ${doctor!.doctorHospital}',
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
-                    style: GoogleFonts.lato(
-                      fontSize: 15,
-                      color: kBlackColor900,
+                    style: GoogleFonts.sourceSans3(
+                      fontSize: 14,
+                      color: kGreyColor800,
                     ),
                   ),
                   const Spacer(),
@@ -101,8 +101,8 @@ class TopDoctorsCard extends StatelessWidget {
                             Text(
                               '(${doctor!.doctorNumberOfPatient})',
                               style: GoogleFonts.lato(
-                                fontSize: 15,
-                                color: kBlackColor900,
+                                fontSize: 10,
+                                color: kGreyColor900,
                               ),
                             ),
                           ],
@@ -122,8 +122,10 @@ class TopDoctorsCard extends StatelessWidget {
                           child: Text(
                             doctor!.doctorIsOpen ? 'Open' : 'Close',
                             style: GoogleFonts.lato(
-                              fontSize: 15,
-                              color: kBlackColor900,
+                              fontSize: 14,
+                              color: doctor!.doctorIsOpen
+                                  ? kGreenColor
+                                  : kRedColor,
                             ),
                           ),
                         )

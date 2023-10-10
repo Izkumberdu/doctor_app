@@ -28,6 +28,10 @@ class shabil extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
+                    onTap: () {
+                      Navigator.of(context)
+                          .pop(); // Navigate back to the previous screen (Home screen)
+                    },
                     // insert on tap(mu balik sa homescreen)
                     child: Container(
                       height: 24,
