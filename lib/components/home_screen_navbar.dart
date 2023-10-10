@@ -24,10 +24,10 @@ class HomeScreenNavBar extends StatelessWidget {
             ),
           ),
         ),
-        Container(
+        const SizedBox(
           width: 40,
           height: 40,
-          child: const CircleAvatar(
+          child: CircleAvatar(
               backgroundColor: kBlueColor,
               backgroundImage:
                   AssetImage('assets/homescreen_images/images.png')),

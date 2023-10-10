@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import "package:doctor_app/screens/constants.dart";
+import 'package:doctor_app/screens/constants.dart';
 import 'package:doctor_app/models/doctor.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class TopDoctorsCard extends StatelessWidget {
   const TopDoctorsCard({Key? key, this.doctor}) : super(key: key);
@@ -52,7 +53,10 @@ class TopDoctorsCard extends StatelessWidget {
                         doctor!.doctorName,
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,
-                        style: Theme.of(context).textTheme.headlineMedium,
+                        style: GoogleFonts.lato(
+                          fontSize: 15,
+                          color: kBlackColor900,
+                        ),
                       ),
                     ),
                   ),
@@ -60,11 +64,14 @@ class TopDoctorsCard extends StatelessWidget {
                     '${doctor!.doctorSpecialty} • ${doctor!.doctorHospital}',
                     overflow: TextOverflow.ellipsis,
                     maxLines: 1,
-                    style: Theme.of(context).textTheme.headlineSmall,
+                    style: GoogleFonts.lato(
+                      fontSize: 15,
+                      color: kBlackColor900,
+                    ),
                   ),
                   const Spacer(),
                   SizedBox(
-                    width: MediaQuery.of(context).size.width - 136,
+                    width: MediaQuery.of(context).size.width - 13,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -93,7 +100,10 @@ class TopDoctorsCard extends StatelessWidget {
                             ),
                             Text(
                               '(${doctor!.doctorNumberOfPatient})',
-                              style: Theme.of(context).textTheme.bodyMedium,
+                              style: GoogleFonts.lato(
+                                fontSize: 15,
+                                color: kBlackColor900,
+                              ),
                             ),
                           ],
                         ),
@@ -111,14 +121,10 @@ class TopDoctorsCard extends StatelessWidget {
                           ),
                           child: Text(
                             doctor!.doctorIsOpen ? 'Open' : 'Close',
-                            style: Theme.of(context)
-                                .textTheme
-                                .titleLarge!
-                                .copyWith(
-                                  color: doctor!.doctorIsOpen
-                                      ? kGreenColor
-                                      : kRedColor,
-                                ),
+                            style: GoogleFonts.lato(
+                              fontSize: 15,
+                              color: kBlackColor900,
+                            ),
                           ),
                         )
                       ],
