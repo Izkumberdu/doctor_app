@@ -11,9 +11,6 @@ class gilang extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
-            height: 8,
-          ),
           Container(
             alignment: Alignment.topCenter,
             height: MediaQuery.of(context).size.height * 0.5,
