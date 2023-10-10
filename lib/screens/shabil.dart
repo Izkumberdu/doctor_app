@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class gilang extends StatelessWidget {
-  const gilang({super.key});
+class shabil extends StatelessWidget {
+  const shabil({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class gilang extends StatelessWidget {
             padding: EdgeInsets.zero,
             decoration: BoxDecoration(
               color: Color(0xFFEAEAEA),
-              image: DecorationImage(image: AssetImage('assets/gilang.png')),
+              image: DecorationImage(image: AssetImage('assets/shabil.png')),
             ),
             child: SafeArea(
                 child: Padding(
@@ -37,6 +37,7 @@ class gilang extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
+                    // insert on tap(mu balik sa homescreen)
                     child: Container(
                       height: 24,
                       width: 24,
@@ -57,7 +58,7 @@ class gilang extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'dr. Gilang Segara Bening',
+                      'dr. Shabil Chan',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w700,
@@ -73,7 +74,7 @@ class gilang extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'Heart',
+                      'Dental',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
@@ -96,7 +97,7 @@ class gilang extends StatelessWidget {
                       width: 8,
                     ),
                     Text(
-                      'Persahabatan Hospital',
+                      'Columbia Asia Hospital',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
@@ -111,7 +112,7 @@ class gilang extends StatelessWidget {
                   height: 16,
                 ),
                 Text(
-                  'dr. Gilang is one of the best doctors in the Persahabatan Hospital. He has saved more than 1000 patients in the past 3 years. He has also received many awards from domestic and abroad as the best doctors. He is available on a private or schedule. ',
+                  'Dr. Shabil Chan, a highly regarded Dental doctor at Columbia Asia Hospital, boasts an impressive record of treating 964 patients over the course of 4 years. She is available on a private or scheduled basis',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
@@ -143,12 +144,10 @@ class gilang extends StatelessWidget {
                       height: 8,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.baseline,
-                      textBaseline: TextBaseline.alphabetic,
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         Text(
-                          '3',
+                          '4',
                           style: TextStyle(
                             fontFamily: GoogleFonts.sourceSans3().fontFamily,
                             fontSize: 24,
@@ -180,7 +179,6 @@ class gilang extends StatelessWidget {
                   width: 22,
                 ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Patient',
@@ -194,12 +192,10 @@ class gilang extends StatelessWidget {
                       height: 8,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.baseline,
-                      textBaseline: TextBaseline.alphabetic,
+                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         Text(
-                          '1221',
+                          '964',
                           style: TextStyle(
                             fontFamily: GoogleFonts.sourceSans3().fontFamily,
                             fontSize: 24,
