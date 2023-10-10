@@ -11,9 +11,6 @@ class gilang extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
-            height: 8,
-          ),
           Container(
             alignment: Alignment.topCenter,
             height: MediaQuery.of(context).size.height * 0.5,
@@ -21,7 +18,8 @@ class gilang extends StatelessWidget {
             padding: EdgeInsets.zero,
             decoration: BoxDecoration(
               color: Color(0xFFEAEAEA),
-              image: DecorationImage(image: AssetImage('assets/gilang.png')),
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage('assets/gilang.png')),
             ),
             child: SafeArea(
                 child: Padding(
@@ -53,7 +51,7 @@ class gilang extends StatelessWidget {
             )),
           ),
           Container(
-            padding: EdgeInsets.only(top: 24, bottom: 16, left: 24, right: 24),
+            padding: EdgeInsets.only(top: 19, bottom: 16, left: 24, right: 24),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
@@ -126,6 +124,7 @@ class gilang extends StatelessWidget {
               ],
             ),
           ),
+          Spacer(),
           Container(
             height: 81,
             padding: EdgeInsets.only(left: 39, right: 55, bottom: 20),
@@ -265,6 +264,7 @@ class gilang extends StatelessWidget {
               ],
             ),
           ),
+          Spacer(),
           Container(
             height: 56,
             width: 327,
