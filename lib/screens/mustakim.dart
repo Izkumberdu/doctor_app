@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class shabil extends StatelessWidget {
-  const shabil({super.key});
+class mustakim extends StatelessWidget {
+  const mustakim({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class shabil extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color(0xFFEAEAEA),
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage('assets/shabil.png')),
+                  fit: BoxFit.cover, image: AssetImage('assets/mustakim.png')),
             ),
             child: SafeArea(
                 child: Padding(
