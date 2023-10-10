@@ -18,11 +18,12 @@ class shabil extends StatelessWidget {
             padding: EdgeInsets.zero,
             decoration: BoxDecoration(
               color: Color(0xFFEAEAEA),
-              image: DecorationImage(image: AssetImage('assets/shabil.png')),
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage('assets/shabil.png')),
             ),
             child: SafeArea(
                 child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 56),
+              padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -37,7 +38,6 @@ class shabil extends StatelessWidget {
                     ),
                   ),
                   GestureDetector(
-                    // insert on tap(mu balik sa homescreen)
                     child: Container(
                       height: 24,
                       width: 24,
@@ -51,14 +51,14 @@ class shabil extends StatelessWidget {
             )),
           ),
           Container(
-            padding: EdgeInsets.only(top: 24, bottom: 16, left: 24, right: 24),
+            padding: EdgeInsets.only(top: 19, bottom: 16, left: 24, right: 24),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Row(
                   children: [
                     Text(
-                      'dr. Shabil Chan',
+                      'dr. Gilang Segara Bening',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w700,
@@ -124,6 +124,7 @@ class shabil extends StatelessWidget {
               ],
             ),
           ),
+          Spacer(),
           Container(
             height: 81,
             padding: EdgeInsets.only(left: 39, right: 55, bottom: 20),
@@ -144,7 +145,9 @@ class shabil extends StatelessWidget {
                       height: 8,
                     ),
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
                           '4',
@@ -179,6 +182,7 @@ class shabil extends StatelessWidget {
                   width: 22,
                 ),
                 Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       'Patient',
@@ -192,7 +196,9 @@ class shabil extends StatelessWidget {
                       height: 8,
                     ),
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
                           '964',
@@ -258,47 +264,45 @@ class shabil extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            height: 56,
-            width: 327,
-            child: Row(
-              children: [
-                Container(
-                  height: 56,
-                  width: 56,
-                  decoration: BoxDecoration(
-                    color: Color(0xFF4485FD),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child:
-                      Image.asset('assets/comment.png', width: 36, height: 36),
+          Spacer(),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 56,
+                width: 56,
+                decoration: BoxDecoration(
+                  color: Color(0xFF4485FD),
+                  borderRadius: BorderRadius.circular(8),
                 ),
-                SizedBox(
-                  width: 16,
+                child: Image.asset('assets/comment.png', width: 36, height: 36),
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Container(
+                height: 56,
+                width: MediaQuery.of(context).size.width - 104,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Color(0xFF00CC6A),
                 ),
-                Container(
-                  height: 56,
-                  width: 255,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(8),
-                    color: Color(0xFF00CC6A),
-                  ),
-                  child: Center(
-                    child: Text(
-                      'Make an Appointment',
-                      style: TextStyle(
-                        fontFamily: GoogleFonts.lato().fontFamily,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: 0.5,
-                        color: Colors.white,
-                      ),
+                child: Center(
+                  child: Text(
+                    'Make an Appointment',
+                    style: TextStyle(
+                      fontFamily: GoogleFonts.lato().fontFamily,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      letterSpacing: 0.5,
+                      color: Colors.white,
                     ),
                   ),
-                )
-              ],
-            ),
+                ),
+              )
+            ],
           ),
+          Spacer(),
         ],
       ),
     );
