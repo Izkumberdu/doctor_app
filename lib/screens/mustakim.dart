@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class shabil extends StatelessWidget {
-  const shabil({super.key});
+class mustakim extends StatelessWidget {
+  const mustakim({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class shabil extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color(0xFFEAEAEA),
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage('assets/shabil.png')),
+                  fit: BoxFit.cover, image: AssetImage('assets/mustakim.png')),
             ),
             child: SafeArea(
                 child: Padding(
@@ -58,7 +58,7 @@ class shabil extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'dr. Gilang Segara Bening',
+                      'dr. Mustakim',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w700,
@@ -74,7 +74,7 @@ class shabil extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'Dental',
+                      'Eye',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
@@ -97,7 +97,7 @@ class shabil extends StatelessWidget {
                       width: 8,
                     ),
                     Text(
-                      'Columbia Asia Hospital',
+                      'Salemba Carolus Hospital',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
@@ -112,7 +112,7 @@ class shabil extends StatelessWidget {
                   height: 16,
                 ),
                 Text(
-                  'Dr. Shabil Chan, a highly regarded Dental doctor at Columbia Asia Hospital, boasts an impressive record of treating 964 patients over the course of 4 years. She is available on a private or scheduled basis',
+                  'Dr. Mustakim is one of the top Eye doctors at Salemba Carolus Hospital. With a one-year experience and having cared for 762 patients. Dr. Mustakim is known for his exceptional skills and dedication to eye care. He is available for private consultations or scheduled appointments.',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
@@ -150,7 +150,7 @@ class shabil extends StatelessWidget {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          '4',
+                          '1',
                           style: TextStyle(
                             fontFamily: GoogleFonts.sourceSans3().fontFamily,
                             fontSize: 24,
@@ -201,7 +201,7 @@ class shabil extends StatelessWidget {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          '964',
+                          '762',
                           style: TextStyle(
                             fontFamily: GoogleFonts.sourceSans3().fontFamily,
                             fontSize: 24,

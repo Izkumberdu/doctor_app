@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class shabil extends StatelessWidget {
-  const shabil({super.key});
+class suprihatini extends StatelessWidget {
+  const suprihatini({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,8 @@ class shabil extends StatelessWidget {
             decoration: BoxDecoration(
               color: Color(0xFFEAEAEA),
               image: DecorationImage(
-                  fit: BoxFit.cover, image: AssetImage('assets/shabil.png')),
+                  fit: BoxFit.cover,
+                  image: AssetImage('assets/suprihatini.png')),
             ),
             child: SafeArea(
                 child: Padding(
@@ -97,7 +98,7 @@ class shabil extends StatelessWidget {
                       width: 8,
                     ),
                     Text(
-                      'Columbia Asia Hospital',
+                      'Salemba Carolus Hospital',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
@@ -112,7 +113,7 @@ class shabil extends StatelessWidget {
                   height: 16,
                 ),
                 Text(
-                  'Dr. Shabil Chan, a highly regarded Dental doctor at Columbia Asia Hospital, boasts an impressive record of treating 964 patients over the course of 4 years. She is available on a private or scheduled basis',
+                  'Dr. Suprihatini, a dedicated Heart doctor at Salemba Carolus Hospital, brings two years of experience and has successfully treated 762 patients. Dr. Suprihatini offers both private consultations and scheduled appointments.',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
@@ -150,7 +151,7 @@ class shabil extends StatelessWidget {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          '4',
+                          '2',
                           style: TextStyle(
                             fontFamily: GoogleFonts.sourceSans3().fontFamily,
                             fontSize: 24,
@@ -201,7 +202,7 @@ class shabil extends StatelessWidget {
                       textBaseline: TextBaseline.alphabetic,
                       children: [
                         Text(
-                          '964',
+                          '762',
                           style: TextStyle(
                             fontFamily: GoogleFonts.sourceSans3().fontFamily,
                             fontSize: 24,
