@@ -23,12 +23,14 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/images/
     - assets/images/img-men-01.png
     - assets/images/img-men-02.png
     - assets/images/img-men-03.png
     - assets/images/img-women-01.png
     - assets/images/img-women-02.png
     - assets/images/img-women-03.png
+    - assets/svg/
     - assets/svg/img-surgeon.svg
     - assets/svg/img-skin.svg
     - assets/svg/img-physician.svg 
