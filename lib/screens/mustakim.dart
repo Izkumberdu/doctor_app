@@ -115,7 +115,7 @@ class mustakim extends StatelessWidget {
                   height: 16,
                 ),
                 Text(
-                  'Dr. Mustakim is one of the top Eye doctors at Salemba Carolus Hospital. With a one-year experience and having cared for 762 patients. Dr. Mustakim is known for his exceptional skills and dedication to eye care. He is available for private consultations or scheduled appointments.',
+                  'Dr. Mustakim is one of the top Eye doctors at Salemba Carolus Hospital. With a one-year experience and having cared for 762 patients. He is available for private consultations or scheduled appointments.',
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
