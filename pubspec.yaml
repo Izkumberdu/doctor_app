@@ -25,6 +25,7 @@ flutter:
   assets:
     - assets/
     - assets/images/
+    - assets/images/IMG_0295-2.png
     - assets/images/img-men-01.png
     - assets/images/img-men-02.png
     - assets/images/img-men-03.png

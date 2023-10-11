@@ -5,8 +5,6 @@ class Doctor {
     this.doctorRating = '',
     this.doctorHospital = '',
     this.doctorNumberOfPatient = '',
-    this.doctorYearOfExperience = '',
-    this.doctorDescription = '',
     this.doctorPicture = '',
     this.doctorIsOpen = false,
   });
@@ -16,8 +14,6 @@ class Doctor {
   String doctorRating;
   String doctorHospital;
   String doctorNumberOfPatient;
-  String doctorYearOfExperience;
-  String doctorDescription;
   String doctorPicture;
   bool doctorIsOpen;
 }
@@ -29,7 +25,6 @@ var topDoctors = [
     doctorRating: '4.8',
     doctorHospital: 'Persahabatan Hospital',
     doctorNumberOfPatient: '1221',
-    doctorYearOfExperience: '3',
     doctorPicture: 'img-men-01.png',
     doctorIsOpen: true,
   ),
@@ -39,7 +34,6 @@ var topDoctors = [
     doctorRating: '4.7',
     doctorHospital: 'Columbia Asia Hospital',
     doctorNumberOfPatient: '964',
-    doctorYearOfExperience: '4',
     doctorPicture: 'img-women-01.png',
     doctorIsOpen: false,
   ),
@@ -49,7 +43,6 @@ var topDoctors = [
     doctorRating: '4.9',
     doctorHospital: 'Salemba Carolus Hospital',
     doctorNumberOfPatient: '762',
-    doctorYearOfExperience: '5',
     doctorPicture: 'img-men-02.png',
     doctorIsOpen: true,
   ),
@@ -59,28 +52,16 @@ var topDoctors = [
     doctorRating: '4.8',
     doctorHospital: 'Salemba Carolus Hospital',
     doctorNumberOfPatient: '1451',
-    doctorYearOfExperience: '6',
     doctorPicture: 'img-women-02.png',
     doctorIsOpen: false,
   ),
   Doctor(
-    doctorName: 'dr. Robert Posy',
+    doctorName: 'dr. Aaron Joshua Cornejo',
     doctorSpecialty: 'Child',
     doctorRating: '4.6',
-    doctorHospital: 'Kariadi Hospital',
+    doctorHospital: 'Minglanilla District Hospital',
     doctorNumberOfPatient: '551',
-    doctorYearOfExperience: '3',
-    doctorPicture: 'img-men-03.png',
-    doctorIsOpen: true,
-  ),
-  Doctor(
-    doctorName: 'dr. Matilde Hani',
-    doctorSpecialty: 'Heart',
-    doctorRating: '4.7',
-    doctorHospital: 'Wiloso Hospital',
-    doctorNumberOfPatient: '888',
-    doctorYearOfExperience: '4',
-    doctorPicture: 'img-women-03.png',
+    doctorPicture: 'IMG_0295-2.png',
     doctorIsOpen: true,
   ),
   // Add more doctors here in the same format as above
