@@ -61,7 +61,7 @@ class suprihatini extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'dr. Gilang Segara Bening',
+                      'dr. Suprihatini',
                       style: TextStyle(
                         fontSize: 24,
                         fontWeight: FontWeight.w700,
@@ -77,7 +77,7 @@ class suprihatini extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'Dental',
+                      'Heart',
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w400,
