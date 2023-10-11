@@ -36,7 +36,7 @@ class TopDoctorsList extends StatelessWidget {
       case 'dr. Suprihatini':
         return '/suprihatini';
       default:
-        return '/unknown'; // Handle unknown doctors or navigate to an error screen.
+        return '/unknown';
     }
   }
 }
